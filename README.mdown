@@ -48,20 +48,32 @@ Usage
     puts "OS Easting:" + easting.to_s + ", OS Northing:" + northing.to_s + "  OS grid ref:" + gridrefLetters
     puts "http://streetmap.co.uk/grid/" + easting.to_s + "_" + northing.to_s + "_106"
 
+Output from the above example:
+
+    WGS84 lat:51.52237, WGS84 lon:-0.10322
+    http://www.openstreetmap.org/?mlat=51.52237&mlon=-0.10322&zoom=16
+
+    Converts to:
+    OSGB36 lat:51.5218609279112, OSGB36 lon:-0.101610123646581
+
+    Converts to:
+    OS Easting:531691, OS Northing:182090  OS grid ref:TQ31698209
+    http://streetmap.co.uk/grid/531691_182090_106
+
 License
 -------
 
-The code was originally written in JavaScrpt by Chris Veness:
-http://www.movable-type.co.uk/scripts/latlong-convert-coords.html
-http://www.movable-type.co.uk/scripts/latlong-gridref.html
-And was originally realeased on the above site under LGPL license:
-(c) Chris Veness 2005-2010
-But is now released on the above site under CC-BY
-(c) Chris Veness 2005-2012
+The code was originally written in JavaScrpt by Chris Veness:<br>
+http://www.movable-type.co.uk/scripts/latlong-convert-coords.html<br>
+http://www.movable-type.co.uk/scripts/latlong-gridref.html<br>
+And was originally realeased on the above site under LGPL license:<br>
+(c) Chris Veness 2005-2010<br>
+But is now released on the above site under CC-BY<br>
+(c) Chris Veness 2005-2012<br>
 
 Here the code has been ported to ruby by Harry Wood. Harry waives all intelectual property rights which may apply to the porting process, meaning the code is (c) Chris Veness as above.
 
 Bundled into a RubyGem by Aaron B. Russell, who also waives any copyright claims to this code. Thanks to Chris and Harry for saving me from having to try and implement this from scratch! :)
 
-WGS84 lat/lons -> OSGB64 lat/lons-> OS Eastings & Northings
+WGS84 lat/lons -> OSGB64 lat/lons-> OS Eastings & Northings<br>
 http://www.movable-type.co.uk/scripts/latlong-convert-coords.html
